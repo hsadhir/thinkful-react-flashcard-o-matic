@@ -1,0 +1,41 @@
+.flashcard .body {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.flashcard .body .front {
+  flex: 1;
+  padding: 10px;
+  align-self: stretch;
+}
+
+.flashcard .body .back {
+  flex: 1;
+  padding: 10px;
+  align-self: stretch;
+}
+
+.gradient-border-left {
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to left,
+      var(--nordic-black),
+      var(--nordic-green),
+      var(--nordic-red)
+    )
+    1;
+}
+
+.gradient-border-right {
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      var(--nordic-black),
+      var(--nordic-blue),
+      var(--nordic-purple)
+    )
+    1;
+}

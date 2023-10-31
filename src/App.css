@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Maiden+Orange&family=Vast+Shadow&display=swap");
+
+:root {
+  --nordic-black: #2e3440;
+  --nordic-white: #eceff4;
+  --nordic-purple: #b48ead;
+  --nordic-green: #a3be8c;
+  --nordic-red: #bf616a;
+  --nordic-blue: #88c0d0;
+  --nordic-gray: #D8DEE9;
+}
+
+body {
+  margin: 0;
+  font-family: "Maiden Orange", "Times New Roman", Times, serif;
+  color: var(--nordic-black);
+}
+
+header {
+  font-family: "Vast Shadow", Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+#parent-container {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/* Add button stylings here */
+button {
+  height: 50px;
+  font-family: "Maiden Orange", "Times New Roman", Times, serif;
+  font-size: 32px;
+}
+
+button:disabled {
+  background-color: var(--nordic-gray);
+  color: var(--nordic-black);
+  pointer-events: none;
+}
+
+/* Return Home Button used in Not Found Page. Could also be used elsewhere.
+  Note: using a Link since its for redirection only. However, this style could also be applied to a button element
+*/
+.return-home {
+  text-decoration: none;
+  background: var(--nordic-black);
+  color: var(--nordic-white);
+  padding: 10px;
+  outline: solid 4px var(--nordic-black);
+  outline-offset: 4px;
+}
+
+.return-home:hover {
+  outline-offset: -4px;
+}
+
+.return-home:active {
+  border: solid 4px var(--nordic-black);
+}
+
+/* Purple Button - for View and Submit */
+.purple-btn {
+  background: var(--nordic-purple);
+  border: solid 2px var(--nordic-black);
+}
+
+.purple-btn:hover {
+  color: var(--nordic-purple);
+  background-color: var(--nordic-black);
+}
+
+.purple-btn:active {
+  background-color: var(--nordic-purple);
+  color: var(--nordic-black);
+}
+
+/* Green Button - for study */
+.green-btn {
+  background: var(--nordic-green);
+  border: solid 2px var(--nordic-black);
+}
+
+.green-btn:hover {
+  color: var(--nordic-green);
+  background-color: var(--nordic-black);
+}
+
+.green-btn:active {
+  background-color: var(--nordic-green);
+  color: var(--nordic-black);
+}
+
+/* Red Button - for delete and cancel */
+.red-btn {
+  background: var(--nordic-red);
+  border: solid 2px var(--nordic-black);
+}
+
+.red-btn:hover {
+  color: var(--nordic-red);
+  background-color: var(--nordic-black);
+}
+
+.red-btn:active {
+  background-color: var(--nordic-red);
+  color: var(--nordic-black);
+}
+/* black button - for create deck / add new cards. 
+  Note: Since the create/add action redirects to create form, we are using a `Link` in the markup. From styling perspective, 
+  this could also be added to a button. 
+*/
+.black-btn {
+  text-decoration: none;
+  background: var(--nordic-black);
+  color: var(--nordic-white);
+  padding: 10px;
+}
+
+.black-btn:hover {
+  border: solid 2px var(--nordic-black);
+  color: var(--nordic-black);
+  background-color: var(--nordic-white);
+}
+
+.black-btn:active {
+  border: solid 4px var(--nordic-black);
+}
+
+/* blue button - for edit */
+.blue-btn {
+  background: var(--nordic-blue);
+  border: solid 2px var(--nordic-black);
+}
+
+.blue-btn:hover {
+  color: var(--nordic-blue);
+  background-color: var(--nordic-black);
+}
+
+.blue-btn:active {
+  background-color: var(--nordic-blue);
+  color: var(--nordic-black);
+}
+
+/* Card Styling 
+  A card contains three sections: header, body and footer. Footer is for action buttons. 
+*/
+.card-container {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: var(--nordic-white);
+  color: var(--nordic-black);
+  border: solid 1px var(--nordic-black);
+  flex: 0 0 calc(33% - 42px);
+  margin: 10px;
+  padding: 10px;
+}
+
+.card .header,
+.card .body {
+  border-bottom: solid 2px var(--nordic-black);
+}
+
+.card .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  font-weight: bold;
+}
+
+.card .footer {
+  display: flex;
+  padding: 10px;
+}
+
+.card .footer button {
+  flex: 1;
+}
+
+/* page header - for decks and cards page */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header button {
+  min-width: 150px;
+}
+
+.direct-child-container {
+  padding: 0 20px 0 20px;
+}
+
+/* form styling */
+form input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 24px;
+  font-family: "Maiden Orange", Arial, Helvetica, sans-serif;
+  border: solid 2px var(--nordic-black);
+  padding: 10px;
+}
+
+form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 200px;
+  font-size: 24px;
+  font-family: "Maiden Orange", Arial, Helvetica, sans-serif;
+  border: solid 2px var(--nordic-black);
+  padding: 10px;
+}
+
+.form-page {
+  margin: 0 25% 0 25%;
+}
+
+.form-container {
+  padding: 10px;
+  margin: 20px;
+  border: solid 2px var(--nordic-black);
+}
+
+form .footer {
+  display: flex;
+  padding: 10px;
+}
+
+form .footer button {
+  flex: 1;
+  height: 50px;
+  font-family: "Maiden Orange", "Times New Roman", Times, serif;
+  font-size: 32px;
+}

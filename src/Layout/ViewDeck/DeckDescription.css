@@ -1,0 +1,10 @@
+.deck-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deck-actions button {
+    flex: 1;
+    align-self: stretch;
+}

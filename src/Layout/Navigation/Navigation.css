@@ -1,0 +1,15 @@
+.navbar {
+    background-color: var(--nordic-white);
+    color: var(--nordic-black);
+    padding: 5px 20px 5px 20px;
+    margin: 5px 20px 5px 20px;
+}
+
+.navbar p {
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--nordic-blue);
+}

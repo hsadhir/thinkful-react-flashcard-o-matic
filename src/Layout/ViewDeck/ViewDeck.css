@@ -1,0 +1,86 @@
+#decks-container {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.deck {
+  background-color: var(--nordic-white);
+  color: var(--nordic-black);
+  flex: 0 0 30%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.deck .header,
+.deck .body {
+  border-bottom: solid 2px var(--nordic-black);
+}
+
+.deck .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  font-weight: bold;
+}
+
+.deck .footer {
+  display: flex;
+  padding: 10px;
+}
+
+.deck .footer button {
+  flex: 1;
+  height: 50px;
+  font-family: "Maiden Orange", "Times New Roman", Times, serif;
+  font-size: 32px;
+}
+
+.deck .view-btn {
+  background: var(--nordic-purple);
+  border: solid 2px var(--nordic-black);
+}
+
+.deck .view-btn:hover {
+  color: var(--nordic-purple);
+  background-color: var(--nordic-black);
+}
+
+.deck .view-btn:active {
+  background-color: var(--nordic-purple);
+  color: var(--nordic-black);
+}
+
+.deck .delete-btn {
+  background: var(--nordic-red);
+  border: solid 2px var(--nordic-black);
+}
+
+.deck .delete-btn:hover {
+  color: var(--nordic-red);
+  background-color: var(--nordic-black);
+}
+
+.deck .delete-btn:active {
+  background-color: var(--nordic-red);
+  color: var(--nordic-black);
+}
+
+.deck .study-btn {
+  background: var(--nordic-green);
+  border: solid 2px var(--nordic-black);
+}
+
+.deck .study-btn:hover {
+  color: var(--nordic-green);
+  background-color: var(--nordic-black);
+}
+
+.deck .study-btn:active {
+  background-color: var(--nordic-green);
+  color: var(--nordic-black);
+}

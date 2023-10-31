@@ -1,0 +1,10 @@
+header {
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--nordic-white);
+    border-bottom: solid 4px var(--nordic-black);
+}
+
+header h1 {
+    font-size: 60px;
+}
