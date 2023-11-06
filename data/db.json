@@ -1,39 +1,4 @@
 {
-  "decks": [
-    {
-      "name": "shield--docker-repo-shield3.11",
-      "description": "Testing Deck *3",
-      "id": 1
-    },
-    {
-      "name": "Briyani",
-      "description": "Testing Deck",
-      "id": 2
-    },
-    {
-      "name": "shield--docker-repo-shield3.10",
-      "description": "Testing",
-      "id": 3
-    }
-  ],
-  "cards": [
-    {
-      "front": "Added Card",
-      "back": "Back",
-      "deckId": 1,
-      "id": 1
-    },
-    {
-      "front": "sdzfxghj",
-      "back": "asdfghjkm",
-      "deckId": 1,
-      "id": 2
-    },
-    {
-      "front": "4th",
-      "back": "back",
-      "deckId": 1,
-      "id": 4
-    }
-  ]
+  "decks": [],
+  "cards": []
 }

@@ -1,0 +1,45 @@
+.study-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  height: calc(100vh - 500px);
+
+  border-width: 10px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to left,
+      var(--nordic-green),
+      var(--nordic-red),
+      var(--nordic-black),
+      var(--nordic-white),
+      var(--nordic-purple),
+      var(--nordic-blue)
+    )
+    1;
+}
+
+.front-display {
+    border: solid 4px var(--nordic-red);
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+    min-height: 200px;
+
+}
+
+.back-display {
+  border: solid 4px var(--nordic-green);
+  padding: 10px;
+  margin: 10px;
+  width: 600px;
+  min-height: 200px;
+}
+
+.study-actions button{
+  min-width: 200px;
+
+}
