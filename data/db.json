@@ -13,9 +13,9 @@
   ],
   "cards": [
     {
-      "id": 1,
-      "front": "Differentiate between Real DOM and Virtual DOM.",
+      "front": "Differentiate between Real DOM and Virtual DOM. (Edited)",
       "back": "Virtual DOM updates are faster but do not directly update the HTML",
+      "id": 1,
       "deckId": 1
     },
     {
@@ -48,6 +48,18 @@
       "back": "b",
       "deckId": 1,
       "id": 7
+    },
+    {
+      "front": "Card #1 Front",
+      "back": "Card #1 Back",
+      "deckId": 1,
+      "id": 8
+    },
+    {
+      "front": "Card #2 Front",
+      "back": "Card #2 Back",
+      "deckId": 1,
+      "id": 9
     }
   ]
 }

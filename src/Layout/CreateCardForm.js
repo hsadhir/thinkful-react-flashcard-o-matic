@@ -84,7 +84,6 @@ export default function CreateCardForm() {
           setSubmitted(false);
           setFront("");
           setBack("");
-          history.goBack();
         }
       };
       create();
@@ -172,9 +171,9 @@ export default function CreateCardForm() {
                 <i>{back.length} / 150 characters.</i>
               </p>
             </div>
-            <div className="footer">
+            { isEdit ? (<div className="footer">
               <button type="submit" className="purple-btn" disabled={isLoading}>
-                Submit
+                Save
               </button>
               <button
                 className="red-btn"
@@ -184,7 +183,22 @@ export default function CreateCardForm() {
               >
                 Cancel
               </button>
+            </div>) : (
+              <div className="footer">
+              <button type="submit" className="purple-btn" disabled={isLoading}>
+                Save
+              </button>
+              <button
+                className="red-btn"
+                onClick={() => history.goBack() /* updated based on isEdit*/}
+                disabled={isLoading}
+                type="button"
+              >
+                Done
+              </button>
             </div>
+            )}
+            
           </form>
         </article>
       </section>

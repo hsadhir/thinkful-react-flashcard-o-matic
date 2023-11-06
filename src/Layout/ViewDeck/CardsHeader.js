@@ -10,7 +10,7 @@ export default function CardsHeader({ deckId }) {
           to={`/decks/${deckId}/cards/new`}
           className="black-btn"
         >
-          Add Card
+          Add Cards
         </Link>
       </p>
     </section>

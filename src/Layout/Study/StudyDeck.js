@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 import "./StudyDeck.css";
 
 export default function StudyDeck({ deck, cards }) {
   const [back, setBack] = useState(false);
   const [curr, setCurr] = useState(0);
+  const history = useHistory();
 
   const nextHandler = () => {
     const totalCards = deck.cards.length;
@@ -14,6 +16,8 @@ export default function StudyDeck({ deck, cards }) {
       if (userAction) {
         setCurr(0);
         setBack(!back);
+      } else {
+        history.push("/");
       }
     } else {
       setCurr((curr) => curr + 1);
